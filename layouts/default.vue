@@ -1,8 +1,26 @@
-<template>
-  <div>
-    <nuxt/>
-    <my-footer/>
-  </div>
+<template lang="pug">
+div
+  nav.uk-navbar-container.uk-margin(uk-navbar)
+    .uk-navbar-left
+      a.uk-navbar-item.uk-logo(href='#') 
+      
+        i.fas.fa-sun.fa-2x.uk-margin-small-right
+        | Engenho Novo Opus 8
+      ul.uk-navbar-nav
+        li
+          a(href='#')
+            span.uk-icon.uk-margin-small-right(uk-icon='icon: waves')  Category Seven
+      ul.uk-navbar-nav
+        li
+          a(href='#')
+            span.uk-icon.uk-margin-small-right(uk-icon='icon: waves')  Category Twelve        
+      .uk-navbar-item
+      .uk-navbar-item
+        form(action='javascript:void(0)')
+          input.uk-input.uk-form-width-small(type='text' placeholder='Input')
+          button.uk-button.uk-button-primary.uk-margin-small-left Data Input 
+
+  nuxt      
 </template>
 
 <script>
